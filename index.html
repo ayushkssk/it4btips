@@ -31,6 +31,10 @@
                     <input type="text" id="targetPrice" name="targetPrice" placeholder="Expected Target Price" required>
                     <input type="text" id="stoploss" name="stoploss" placeholder="Stoploss" required>
                     <input type="text" name="duration" placeholder="Duration (e.g., 2-4 days)" required>
+                    <select id="riskLevel" name="riskLevel" required>
+                        <option value="safe">Safe</option>
+                        <option value="risky">Risky</option>
+                    </select>
                     <button type="submit">Generate Market Tip</button>
                 </form>
                 <!-- New Information Block -->
@@ -47,18 +51,18 @@
                     <div class="referral-blocks">
                         <div class="referral-block">
                             <a href="https://5paisa.page.link/7rufBVqdVWoPGLXA8" target="_blank">
-                                <h3>1️⃣ 5Paisa</h3>
+                                <h3>1️⃣ <u>5Paisa</u></h3>
                                 <p>Sign up with Referral Code: AYUS049</p>
                             </a>
                         </div>
                         <div class="referral-block">
                             <a href="https://KotakSecurities.ref-r.com/c/i/32531/88310140?r=wa" target="_blank">
-                                <h3>2️⃣ Kotak Securities</h3>
+                                <h3>2️⃣ <u>Kotak Securities</u></h3>
                             </a>
                         </div>
                         <div class="referral-block">
                             <a href="https://join.dhan.co/?invite=YVUAS49994" target="_blank">
-                                <h3>3️⃣ Dhan</h3>
+                                <h3>3️⃣ <u>Dhan</u></h3>
                                 <p>My unique referral code: YVUAS49994</p>
                             </a>
                         </div>
@@ -66,11 +70,10 @@
                     <p>Happy investing! 📊💹</p>
                 </div>
                 <!-- Display Stored Data -->
-                <div id="outputSection" class="output-section" style="display: none;">
-                    <h2>Generated Market Tip</h2>
-                    <div id="generatedTip"></div>
+                <div id="outputSection" class="output-section">
+                    <!-- Tips will be dynamically appended here -->
                 </div>
-                <button id="clearData">Clear Data</button>
+                <button id="clearData">Clear All Tips</button>
             </div>
         </div>
     </header>
@@ -93,6 +96,12 @@
             <p>A young & energetic employee base to deliver the best results for the customer.</p>
         </div>
     </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <p>Investment in securities market are subject to market risks. Read all the related documents carefully before investing. Registration Not granted by SEBI, No way guarantees performance of the intermediary or provide any assurance of returns to investors.</p>
+        <p>Copyright © 2011-2024 All Rights Reserved IT4B.in Pvt. Ltd</p>
+    </footer>
 
     <!-- jQuery and jQuery UI for autocomplete -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
