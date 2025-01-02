@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply m-0 min-w-[320px] min-h-screen;
+  }
+}
+
+/* Market Ticker Animation */
+.ticker-container {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.ticker-items {
+  display: inline-block;
+  white-space: nowrap;
+  padding-right: 100%;
+  animation: ticker 30s linear infinite;
+}
+
+@keyframes ticker {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
