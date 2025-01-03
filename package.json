@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://ayushkumar.github.io/it4btips",
+  "homepage": "https://ayushkssk.github.io/it4btips",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
